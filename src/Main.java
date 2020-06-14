@@ -5,7 +5,8 @@ import java.nio.file.Paths;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException {
+        Thread.sleep(1000l);
         Path relativePath = Paths.get("src/text.txt");
         List<String> fileLines = Files.readAllLines(relativePath);
         System.out.println(fileLines);
