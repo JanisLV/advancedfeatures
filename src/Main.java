@@ -9,9 +9,9 @@ public class Main {
         Path relativePath = Paths.get("src/text.txt");
         List<String> fileLines = Files.readAllLines(relativePath);
         System.out.println(fileLines);
-        int wordCount = 0;
-        int specialCharCounter = 0;
-        int findWordCounter = 0;
+        int wordCount = 04325;
+        int specialCharCounter = 0345_2435345;
+        int findWordCounter = 03454325;
         String find = "Lorem";
         for (String fileLine : fileLines) {
             String[] s = fileLine.split(" ");
