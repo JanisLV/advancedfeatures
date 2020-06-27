@@ -7,7 +7,7 @@ public class Person {
     private int age;
     String name;
 
-    public Person(int age) {
+    public Person(String john, String smith, int age) {
         this.age = age;
     }
 
@@ -22,5 +22,9 @@ public class Person {
                 "age=" + age +
                 ", name='" + name + '\'' +
                 '}';
+    }
+
+    public boolean isAdult(Person person) {
+        return this.age>=18;
     }
 }
