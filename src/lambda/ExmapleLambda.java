@@ -23,5 +23,8 @@ public class ExmapleLambda {
             System.out.println(result);
 //            return;
         };
+        op.test(1,2);
+
+
     }
 }

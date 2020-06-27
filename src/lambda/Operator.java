@@ -1,5 +1,5 @@
 package lambda;
 
 public interface Operator {
-    void test(int x1, int x2);
+    float test(float x1, float x2);
 }
