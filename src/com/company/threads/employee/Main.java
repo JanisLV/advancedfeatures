@@ -19,10 +19,20 @@ public class Main {
             t.start();
         }
 
-        Thread.sleep(30_000l);
+        for (int i = employeeList.size() - 1; i >= 0; i--) {
+            Thread.sleep(3_000l);
+            Employee employee = null;
+            for (Employee employeeFromList : employeeList) {
+                if("Andy".equals(employeeFromList.getName())){
+                    employee = employeeFromList;
+                }
+            }
+            employee.stopWorking();
+            employeeList.remove(employee);
+            for (Employee employeeStillWorking : employeeList) {
+                employeeStillWorking.workFaster();
+            }
+        }
 
-        Employee employee = employeeList.get(0);
-        employee.stopWorking();
-        employeeList.remove(employee);
     }
 }
